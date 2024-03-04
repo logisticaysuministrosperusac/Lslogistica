@@ -18,25 +18,25 @@
 
 /*HEADER*/
     /*BARRA DE ANUNCIOS*/
-.box_ads{
+#box_ads{
     width: auto;
     margin: auto 0;
     overflow: hidden;
     
 }
-    .box_ads ul{
+    #box_ads ul{
         display: flex;
         margin: 0 auto;
         padding: 0;
         width: 400%;
         animation: slide1 20s infinite alternate ease-in-out;
     }
-    .box_ads li{
+    #box_ads li{
         width: 100%;
         list-style: none;
         position: relative;
     }
-    .box_ads img{
+    #box_ads img{
         height: 80%;
         width: 100vw;
         position: relative;
@@ -250,6 +250,11 @@ input {
         padding: 8px 30px;
     }
     .menu li :hover{
+        background-color: #E6BD5C;
+    }
+
+
+.hover :hover{
         background-color: #E6BD5C;
     }
 
@@ -565,3 +570,7 @@ flex-wrap: wrap;
 }
         
    /* Fin Nueastros Clientes*/
+
+
+   #caja3 { position: absolute;
+    z-index: 50;  top: 20em; left: 2em;}
