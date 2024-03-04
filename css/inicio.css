@@ -1,0 +1,148 @@
+
+
+.categorias .categoria__img {
+    background: #f9f9f9;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: inset -8px 8px 12px #ededed, inset 8px -8px 12px #fff;
+    position: relative;
+    transition: all .3s;
+}
+
+
+
+
+
+*, :before, :after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #eee;
+}
+
+
+
+#zoom {
+    transition: transform .2s; 
+}
+ 
+#zoom:hover {
+    transform: scale(1.1); 
+}
+
+
+#zoom:hover {
+    transform: scale(1.1); 
+}
+
+
+#zoom {
+    transition: transform .2s; 
+}
+
+
+
+
+.productos__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+
+.productos {
+    padding: 2rem 8rem 4rem;
+}
+
+
+.productos__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.productos__title h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    color: #00365f;
+    font-size: 900;
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    background: #fff;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: AvenirLTPro, sans-serif;
+}
+
+
+.cardProd {
+    display: block;
+    height: 44rem;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px #0000001c;
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0,.11);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, .11);
+    transition: all .2s;
+}
+
+
+
+
+
+.flex-container {
+
+display: flex ;
+
+justify-content:  space-around;
+
+flex-wrap: wrap;
+
+}
+
+
+
+
+.centrado{
+    text-align:center;
+    border:1px dotted #000;
+     padding:8px;
+
+    color: #18377A;
+    text-align: center }
+        
+
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
+.redondo{
+
+height: auto;
+display: block;
+  border-radius: 80px;
+  background: #09BB1B;
+
+
+}
+
