@@ -17,12 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
- 
-
-    <script src="js/api.js?1.5"></script>
 
     <!-- link para cambio de letra que se nesecita-->
-
+ <script src="js/api.js?1.7"></script>
 
 </head>
 <body>
@@ -53,9 +50,9 @@
             <div>
                 <img src="img/logo_ls.png" alt="" href="#">
                 <li>
-                    <a href="#" style="color:#18377A;">Inicio</a>
-                    <a href="#" style="color:#18377A;">Nosotros</a>
-                    <a href="productos.html" style="color:#18377A;" >Productos</a>
+                    <a href="index.html" style="color:#18377A;">Inicio</a>
+                    <a href="#.html" style="color:#18377A;">Nosotros</a>
+                    <a href="#" style="color:#18377A;" >Productos</a>
                     <a href="contactos.html" style="color:#18377A;">Contactos</a>
                     <a href="https://drive.google.com/file/d/1J8N03s_Ib4Cj6vfvZbd6FTD88gL1HGqH/view?usp=sharing" target="_blank" style="color:#18377A;" >Catalogo</a>
                 </li>
@@ -69,7 +66,7 @@
 
         <div class="menu">
             <li>
-                <a href="telaArpillera.html">Tela Arpillera </a>
+                <a href="#">Tela Arpillera </a>
                 <a href="">Malla Raschel</a>
                 <a href="">Sacos Tejidos </a>
                 <a href="">Tela Avicola </a>
@@ -80,7 +77,56 @@
     </div>
 
 
+<div id="caja3">
+    
+           <div class="contact-form" style="background: #9b9b9b; border-radius: 40px"; >
+           
+         
+                <form action="" method="get" >
+                    <div class="block">
+                        <p  >
+                            <input type="text" name="Nombre" placeholder="Nombre / Empresa" style="border-radius: 70px">
+                        </p>
+
+
+                    </div>
+
+
+
+
+                     <div class="block">
+
+                        <p>
+                            <textarea name="Mensaje" rows="2" placeholder="Mensaje " style="border-radius: 30px; width:500px;height:100px;"></textarea>
+                        </p>
+                        
+                      
+                        
+
+                    </div>
+
+
+     
+        
+
+                            <!--button onclick="sub()" style="border-radius: 30px;">Enviar</button-->
+
+                  
+
+                            <button onclick="alerta()" style="border-radius: 30px;">Enviar</button>
+                            
+                </form>
+
+             
+
+        </div>
+</div>
+
+
+
+
     <div class="slider-box">
+
 
         <ul>
             <li>
@@ -102,7 +148,9 @@
 
 
 <!-- Iconos -->
-    <div id="icon_blocks" class="flex-container">
+
+
+    <!--div id="icon_blocks" class="flex-container">
 
         <div id="zoom"> <img src="img/24-horas.png" style="width: 70.5px; margin-right: 30px;   " >
             <span style="float: right; color: #fff;" > <h5>ATENCION LAS</h5><h5>24 HORAS</h5> </span> 
@@ -124,7 +172,8 @@
             <span style="float: right; color: #fff;" > <h5>PEDIDOS AL</h5><h5>CREDITO</h5> </span>
         </div>
 
-    </div>
+    </div -->
+
 
 
 <!-- Iconos   finn -->
@@ -135,51 +184,18 @@
 </section-->
 
 <!--FILAS RETANGULARES-->
-    <div id="productos_destacados" class="flex-container">
-    
-        <div id="zoom"> 
-            <img src="img/hero/hero_1.png" style="width: 400px;" height="180" >
-            <div class="categoria__title">
-                <h5 class="centrado">SACOS TEJIDOS</h5>                                           
-            </div>
-        </div>
+        <hr>
+ 
 
-
-        <div id="zoom"> 
-            <img src="img/hero/hero_2.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">TELAS</h5>                                       
-            </div>
-        </div>
-
-
-        <div id="zoom"> 
-            <img src="img/hero/hero_3.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">MALLAS</h5>                                               
-            </div>
-        </div>
-
-
-        <div id="zoom"> 
-            <img src="img/hero/hero_4.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">IMPERMEABLES</h5>                             
-            </div>
-        </div>
-    </div>
-
-
-<!--FILAS RETANGULARES FINN -->
-
+<!--FILAS RETANGULARES FINN --
     <hr>
 
 
-<!-- LISTA DE PRODUCTOS_ REALES-->
+<!- LISTA DE PRODUCTOS_ REALES-->
     <div id="productos_ofertas" >
-        <h1 class="centrado">Productos en Oferta</h1>
+        <h1 class="centrado">Tela Arpillera</h1>
 
-        <div id="products_box">
+        <div id="products_box" class="flex-container">
             <div id="zoom"> 
                 <img src="img/130524-65_v_c_d.png">
 
@@ -255,8 +271,75 @@
             </div>
 
 
+        </div>
+
+    </div>
+
+
+
+    <div id="productos_ofertas" >
+        <h1 class="centrado">Productos en Oferta</h1>
+
+        <div id="products_box" class="flex-container">
             <div id="zoom"> 
-                <img src="img/014351-2.png">
+                <img src="img/130524-65_v_c_d.png">
+
+                <span>
+                    <p class="categoria">MALLA RASCHEL </p>
+
+                    <h5 style="line-height: 0%">MALLA RASCHEL 90%</h5>
+
+                    <p class="medidas">4.2 X 100 </p>
+
+                    <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                        <center>
+                            <button type="button" class="btn btn-success" style="border-radius: 70px;">
+                                COTIZAR
+                            </button>
+                        </center>
+                    </a>
+                </span> 
+            </div>
+
+
+            <div id="zoom"> 
+                <img src="img/130524-65_v_c_d.png">
+                <span>
+                    <p class="categoria">MALLA RASCHEL </p>
+                    <h5 style="line-height: 0%">MALLA RASCHEL 90%</h5>
+                    <p class="medidas">4.2 X 100 </p>
+
+                    <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                        <center>
+                            <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                                COTIZAR
+                            </button>
+                        </center>
+                    </a>
+                </span>
+            </div>
+
+
+            <div id="zoom"> 
+                <img src="img/130524-65_v_c_d.png">
+                <span>
+                    <p class="categoria">MALLA RASCHEL </p>
+                    <h5 style="line-height: 0%">MALLA RASCHEL 95%</h5>
+                    <p class="medidas">4.2 X 100 </p>
+
+                    <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                        <center>
+                            <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                                COTIZAR
+                            </button>
+                        </center>
+                    </a>
+                </span> 
+            </div>
+
+
+            <div id="zoom"> 
+                <img src="img/123942-1419291.png">
                 <span>
                     <p class="categoria">TELA ARPILLERA </p>
                     <h5 style="line-height: 0%">TELA AVICOLA 140 GR</h5>
@@ -273,90 +356,16 @@
             </div>
 
 
-            
-
-
-
         </div>
-
-                                    <center>
-                            <button type="button" class="btn btn-success" style="border-radius: 70px; background-color: #18377A" >
-                                MAS PRODUCTOS
-                            </button>
-                        </center>
 
     </div>
 
 
 
-<!-- LISTA DE PRODUCTOS_ REALES FIN_-->
-
-
-<!-- SECCCION ___6 ---->
-
-     <hr>
-        <div >
-            <h1 class="centrado">SECCCION 6</h1>
-
-        </div>
-
-<!-- SECCCION ___7  FINN  ---->
-
-
-
-
-
-<!-- SECCCION ___7---->
 
          <hr>
-        <div >
-            <h1 class="centrado">Nuestros Clientes</h1>
 
 
-            </div>
-
-<div class="flex-container">
-    <div>
-        <div> 
-            <img src="img/clientes/BADINOTTI_GROUP.png" style="width: 50%; " >
-        </div>
-
-        <div>  
-            <img src="img/clientes/MINERA_COLIBRI.png" style="width: 50% " >
-        </div>
-
-     
-
-    </div>
-
-        <div>
-        <div> 
-            <img src="img/clientes/BADINOTTI_GROUP.png" style="width: 50%; " >
-        </div>
-
-        <div>  
-            <img src="img/clientes/MINERA_COLIBRI.png" style="width: 50% " >
-        </div>
-
-    
-
-    </div>
-
-
-        <div>
-        <div> 
-            <img src="img/clientes/BADINOTTI_GROUP.png" style="width: 50%; " >
-        </div>
-
-        <div>  
-            <img src="img/clientes/MINERA_COLIBRI.png" style="width: 50% " >
-        </div>
-
-
-
-
-    </div>
-</div>
 
 <!-- SECCCION ___7  FINN  ---->
 
@@ -424,7 +433,7 @@
                      <div class="block">
 
                         <p>
-                            <textarea name="Mensaje" rows="2" placeholder="Mensaje4  " style="border-radius: 30px; width:500px;height:100px;"></textarea>
+                            <textarea name="Mensaje" rows="2" placeholder="Mensaje " style="border-radius: 30px; width:500px;height:100px;"></textarea>
                         </p>
                         
                       
@@ -440,6 +449,9 @@
                     </p>
                 </form>
         </div>
+
+
+
 
 
 </div>
@@ -508,6 +520,9 @@
 
             </div>
         </div>
+
+
+
         <div class="redes-footer">
             <a href="https://www.facebook.com/logisticaysuministrosperu" target="_blank">
                 <img class="meta" src="img/ico/facebook-blanco.png" alt="">

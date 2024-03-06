@@ -317,6 +317,12 @@ hr{
             #productos_ofertas #products_box{
                 display: flex;
                 justify-content: space-between;
+                /*display: flex ;*/
+
+                /*justify-content:  space-around;*/
+
+        flex-wrap: wrap;                                
+
                 
             }
                 #productos_ofertas #products_box div{
@@ -486,6 +492,11 @@ hr{
     .info-phone li{
         font-size: 19px;
     }
+    .info-product img{
+        height: 65px;
+        margin: 0 70px;
+
+    }
     .info-page div{
         display: flex;
         flex-direction: column;
@@ -572,5 +583,16 @@ flex-wrap: wrap;
    /* Fin Nueastros Clientes*/
 
 
-   #caja3 { position: absolute;
-    z-index: 50;  top: 20em; left: 2em;}
+#caja3 { position: absolute;
+    z-index: 50;  top: 12em; left: 2em;}
+
+
+
+iframe{
+  width: 100%;
+  height: 500px;
+  /*Sólo para que se vea, ya que la dirección al parecer está mal*/
+  border: 5px solid green;
+}
+
+    
