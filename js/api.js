@@ -3,7 +3,7 @@
     var mensaje = null;
     var status = null;
 
-    var newButton = null;
+var newButton = null;
 function sub(){
   product = document.getElementsByName("Nombre")[0].value;
   shelf = document.getElementsByName("Mensaje")[0].value;
@@ -28,7 +28,7 @@ function alerta()
     if (opcion == true) {
  
 
-
+      console.log('lo Hice');
     window.open('https://wa.me/+51978575288/?text='+nombre+'%20'+mensaje,'_blank');window.open(this.href,'_self');
 
 
@@ -38,5 +38,23 @@ function alerta()
 	}
 	document.getElementById("ejemplo").innerHTML = mensaje;
 
+
 }
+
+/*$(document).ready(() => {
+            $('#importarContenido').click(function() {
+              console.log('quinua');
+                $('#listas').load("includes.html");
+
+            });
+        });*/
+
+$(document).ready(function(){
+
+  $("#importarContenido").click(function(){
+    console.log('quinua');
+    $(".div").show();
+    console.log('quinua_');
+  });
+});
 

@@ -1,4 +1,4 @@
-*{
+index.css*{
     box-sizing: border-box;
     width: auto;
     margin: 0;
@@ -17,78 +17,80 @@
 
 
 /*HEADER*/
-    /*BARRA DE ANUNCIOS*/
-#box_ads{
-    width: auto;
-    margin: auto 0;
-    overflow: hidden;
-    
-}
-    #box_ads ul{
-        display: flex;
-        margin: 0 auto;
-        padding: 0;
-        width: 400%;
-        animation: slide1 20s infinite alternate ease-in-out;
-    }
-    #box_ads li{
-        width: 100%;
-        list-style: none;
-        position: relative;
-    }
-    #box_ads img{
-        height: 80%;
-        width: 100vw;
-        position: relative;
-        
-    }
-
-    @keyframes slide1 {
-        0% {margin-left: 0;}
-        20% {margin-left: 0;}
-
-        25% {margin-left: -100%;}
-        45% {margin-left: -100%;}
-
-        50% {margin-left: -200%;}
-        70% {margin-left: -200%;}
-
-        75% {margin-left: -300%;}
-        100% {margin-left: -300%;}
-    }  
-
+/*BOTONERA*/
 .headline{
     width: 100%;
-    position: fixed;
     z-index: 1000;
+    position: fixed;
 }
+    /*BARRA DE ANUNCIOS*/
+    .box_ads{
+        width: 100%;
+        height: 38px;
+        overflow: hidden;
+    }
+        .box_ads ul{
+            display: flex;
+            margin: 0 auto;
+            padding: 0;
+            width: 400%;
+            animation: slide1 20s infinite alternate ease-in-out;
+        }
+        .box_ads li{
+            width: 100%;
+            list-style: none;
+            position: relative;
+        }
+        .box_ads img{
+            height: 38px;
+            width: 100%;
+            position: relative;
+            
+        }
+
+        @keyframes slide1 {
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+
+            75% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+        } 
+    /*BARRA DE ANUNCIOS*/
+
+    /*HEADLINE*/
     .headline nav{
-        /*display: flex;
-        align-items: center;*/
         background-color: #fff;
-        height: 100px;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-        .headline div{
+        .headline nav div{
             display: flex;
             align-items: center;
         }
-            .headline div img{
-                height: 65px;
+            .headline nav div img{
+                height: 55px;
                 margin: 0 70px;
             }
-            .headline div li{
+            .headline nav div li{
                 list-style: none;
             }
-                .headline div li a{
+                .headline nav div li a{
+                    font-weight: 400;
                     text-decoration: none;
                     margin: 20px;
-                    color: #fff;
+                    color: #18377A;
                 }
 
         .headline .call_action1 button{
+            color: #fff;
             margin: 0 70px;
             height: 50px;
             width: 200px;
@@ -98,76 +100,35 @@
             font-weight: bold;
             font-size: large;
         }
+    /*HEADLINE*/
 
-/*.contenedor {
-	position: absolute;
-	left: 48%;
-	top: 45%;
-	transform: translate(-50%,-50%);
-	padding: 10px;
-}
+    /*BOTON WHATSAPP*/
+    .boton_whatsapp{
+        z-index: 100;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+    }  
+        .boton_whatsapp a img{
+            width: 90px;
+        }
 
-input {
-	outline: none;
-	box-sizing: border-box;
-	height: 60px;
-	width: 0px;
-	padding: 0 20px;
-	color: #000;
-	border-radius: 50px;
-	font-size: 20px;
-	border: 1px solid #D50000;
-	transition: all .7s ease;
-}
-
-::placeholder {
-	color: grey;
-}
-
-.btn {
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	width: 80px;
-	height: 80px;
-	background: #D50000;
-	line-height: 80px;
-	border-radius: 50%;
-	text-align: center;
-	cursor: pointer;
-	transition: .5s;
-}
-
-.btn i {
-	font-size: 25px;
-	color: white;
-	line-height: 80px;
-	transition: all .7s ease;
-}
-
-.contenedor:hover input {
-	width: 350px;
-}
-
-.contenedor:hover i{
-	transform: rotate(-360deg);
-}
-
-.btn:hover{
-	background: #cc0000;
-} */
-
-
+        .boton_whatsapp a img:hover {
+            transition: transform .2s ease-in-out;
+            transform: scale(1.1); 
+        }
+    /*BOTON WHATSAPP*/
 
 /*HERO*/
 .slider-box{
     width: auto;
-    height: auto;
+    height: 800px;
     margin: auto 0;
     overflow: hidden;
     
 }
     .slider-box ul{
+        margin: 158px 0 0 0;
         display: flex;
         padding: 0;
         width: 400%;
@@ -277,10 +238,28 @@ input {
         align-content: center;
         justify-content: space-between;
     }
+        #icon_blocks div{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            height: 60px;
+            width: 220px;
+        }   
+            #icon_blocks div img{
+                height: 50px; 
+                margin-right: 10px;
+            }
+            #icon_blocks div span{
+                float: right; 
+                color: #fff;
+                font-size: 18pt;
+                line-height: 1.1;
+            }
 
 /*PRODUCTOS*/
-    /*PRODUCTOS DESTACADOS*/
+    /*NUESTROS PRODUCTOS*/
         #productos_destacados{
+            margin: 30px 0;
             color: #18377A;
             height: 300px;
             padding: 0 120px;
@@ -299,6 +278,7 @@ input {
                 text-align: center;
                 margin: 10px 0;
             }
+    /*NUESTROS PRODUCTOS*/
 
 hr{
     margin: 10px 200px;
@@ -306,6 +286,7 @@ hr{
 
     /*PRODUCTOS OFERTAS*/  
         #productos_ofertas{
+            margin: 70px 0;
             height: 700px;
             padding: 0 100px;
             
@@ -317,12 +298,6 @@ hr{
             #productos_ofertas #products_box{
                 display: flex;
                 justify-content: space-between;
-                /*display: flex ;*/
-
-                /*justify-content:  space-around;*/
-
-        flex-wrap: wrap;                                
-
                 
             }
                 #productos_ofertas #products_box div{
@@ -366,176 +341,251 @@ hr{
                             font-weight: bold;
                             font-size: large;
                         }
+            #productos_ofertas .button_more{
+                margin: 20px;
+                width: 280px;
+                height: 40px;
+                font-size: large;
+                font-weight: bold;
+                color: #fff;
+                border-radius: 70px;
+                border: 0;
+                background-color: #18377A
+            }  
+            #productos_ofertas .button_more:hover{
+                background-color: #E6BD5C;
+                }
+/*NUESTROS PRODUCTOS*/
 
+    /*BANNER DE NOTICIAS*/
+    .new_banner{
+        background-color: aquamarine;
+        height: 450px;
+        width: auto;
+    }
 
+/*CLIENTES*/ 
+    .clients_box{
+        padding: 50px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;  
+    }   
+        .clients_box .clients_logo{
+            margin:  20px 0;
+            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+            .clients_box .clients_logo div{
+                margin: 0;
+            }
+                .clients_box .clients_logo div img{
+                    height: 110px;
+                }
 /*CLIENTES*/
     
-    /*FOOTER*/
+/*FOOTER*/
     footer{
         background-color: #18377A;
         color: #fff;
-        padding: 50px;
+        padding: 30px 100px;
+    }  
+    /*CUADRO DE CONTACTO Y MAPA*/
+    .form_box{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center ;
     }
+        .form_box iframe{
+            width: 800px;
+            height: 525px;
+        }
         .contact-form{
-            margin: 0;
-        }
-        .contact-form h3{
-            margin: 20px;
-            text-align: center;
-            font-size: 30px;
-            font-weight: bold;
-        }
-        .contact-form form{
+            width: 800px;
+            height: 600px;
             display: flex;
-            margin: 0;
-            padding: 1em;
+            flex-direction: column;
             justify-content: center;
+        }
+            .contact-form h3{
+                margin: 20px;
+                text-align: center;
+                font-size: 20pt;
+                font-weight: bold;
+            }
+            .contact-form h5{
+                text-align: center;
+                font-size: 12pt;
+                font-weight: 400;
+            }
+            .contact-form form{
+                display: flex;
+                margin: 0;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+                .contact-form form p{
+                    margin: 6px;
+                }
+                    ::placeholder{
+                        color: #A6A6A6;
+                        font-weight: bold;
+                        font-size: 15pt;
+                    }
+                    .contact-form form input{
+                        width: 500px;
+                        height: 50px;
+                        padding: 17px 25px;
+                        background-color:#fff;
+                        border: none;
+                        font-size: 20px;
+                    }
+                    .contact-form form p textarea{
+                        width: 500px;
+                        height: 100px;
+                        padding: 17px 25px;
+                        border-radius: 25px;
+                        background-color:#fff;
+                        border: none;
+                        font-size: 20px;
+                    }
+                .contact-form form button{
+                    width: 150px;
+                    height: 50px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: auto;
+                    background-color: #fff;
+                    border: 0 solid;
+                }
+                .contact-form form p button :hover{
+                    background-color: #E6BD5C   ;
+                }
+    /*CUADRO DE CONTACTO Y MAPA*/
+        
+        footer hr{
+            border-color: #284585;
+        }
+        
+    /*INFORMACIÓN DE CONTACTO*/
+    .contact-info{
+        margin: 100px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }    
+        .contact-info .logo_redes{
+            display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .contact-form form .block p{
-            margin: 10px;
-        }
-        .contact-form form .block-tel,
-        .contact-form form .block-men{
-            margin: 10px;
-        }
-
-        .contact-form form .block{
+            .contact-info .logo_redes .logo_wht{
+                background-color: #fff;
+                height: 150px;
+            }
+            .contact-info .logo_redes a img{
+                height: 50px;
+                margin: 20px;
+                margin-top: 30px;
+            }
+            
+            
+        .column_info{
+            width: 200px;
             display: flex;
+            flex-direction: column;
         }
-        ::placeholder{
-            color: #fff;
-            font-weight: bold;
-            font-size: 20px;
+            .column_info h3{
+                font-size: 14pt;
+            }
+            .column_info .info_box{
+                width: 300px;
+                height: 150px;
+            }
+                .column_info .info_box ul li{
+                    list-style: none;
+                    padding-left: 8px;
+
+                }
+                .column_info .info_box ul a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+                .column_info .info_box ul{
+                    margin: 0; 
+                }
+                .column_info .info_box ul div{
+                    margin-right: 8px;
+                }
+                .column_info .info_box ul button{
+                    margin: 5px;
+                    width: 200px;
+                    height: 30px;
+                    font-size: 11pt;
+                    border-radius: 25px;
+                    background-color: #E6BD5C;
+                    color: #18377A;
+                    font-weight: bold;
+                    border: 0;
+                }
+                .column_info .tel_box{
+                    width: 300px;
+                    height: 150px;
+                }
+
+                .column_info .tel_box ul{
+                    text-decoration: none;
+                    display: flex;
+                }   
+                    .column_info .tel_box ul .tel_1{
+                        margin-left: 10px;
+                    }
+                    .column_info .tel_box ul .tel_2{
+                        margin-left: 25px;
+                    }
+                        .column_info .tel_box ul div a{
+                            color: #fff;
+                            list-style: none;
+                        }
+        .column_info .info_box .bancos{
+            display: flex;
+            flex-direction: column;
+            width: 180px;
+            margin-top: 15px;
         }
-        .contact-form form .block input{
-            width: 490px;
-            height: 60px;
-            padding: 17px 25px;
-            background-color:#18377A;
-            border: 1px solid;
-            border-color: #fff;
-            color: #fff;
-            font-size: 20px;
+        .column_info .info_box div .bcp{
+            height: 40px;
+            margin-left: 10px;
         }
-        .contact-form form .block-tel input{
-            width: 1000px;
-            height: 60px;
-            padding: 17px 25px;
-            background-color:#18377A;
-            border: 1px solid;
-            border-color: #fff;
-            color: #fff;
-            font-size: 20px;
-        }
-        .contact-form form textarea{
-            width: 1000px;
-            height: 110px;
-            padding: 17px 25px;
-            background-color:#18377A;
-            border: 1px solid;
-            border-color: #fff;
-            color: #fff;
-            font-size: 20px;
-        }
-        .contact-form form button{
-            width: 150px;
-            height: 60px;
-            font-size: 20px;
-            font-weight: bold;
-            padding: auto;
-            background-color: #fff;
-            border: 0 solid;
-        }
-        .contact-form form p button :hover{
-            background-color: #E6BD5C   ;
+        .column_info .info_box div .bbva{
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 15px;
         }
 
 
-/*CONTACT-INFO*/
-.contact-info{
-    margin: 100px 0 0;
-    padding: 0 80px;
-    display: flex;
-    justify-content: space-around;
-}    
-    .info-product,
-    .info-email,
-    .info-phone,
-    .info-page{
-        width: 300px;
-    }
 
-    .info-product a,
-    .info-email a,
-    .info-phone a,
-    .info-page a{
-        text-decoration: none;
+
+
+
+    .footer{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 30px;
+        background-color: black;
         color: #fff;
     }
-    .info-product h3,
-    .info-email h3,
-    .info-phone h3,
-    .info-page h3{
-        margin: 10px 0;
-        font-size: 23px;
-    }
-    .info-product ul,
-    .info-email ul,
-    .info-phone ul,
-    .info-page div{
-        margin: 30px 0;
-    }
-    .info-product li,
-    .info-email li,
-    .info-phone li{
-        font-size: 19px;
-    }
-    .info-product img{
-        height: 65px;
-        margin: 0 70px;
-
-    }
-    .info-page div{
-        display: flex;
-        flex-direction: column;
-    }
-        .info-page .bcp{
-            margin: 0 0 5px 0;
-            width: 120px;
+        .footer P{
+            margin: 0;
         }
-        .info-page .bbva{
-            margin: 5px 0;
-            width: 100px;
-        }
-
-
-.redes-footer{
-    display: flex;
-    justify-content: center;
-
-}  
-    .redes-footer img{
-        margin: 10px;
-    }
-    .redes-footer .bcp{
-        width: 180px;
-    }
-    .redes-footer .meta{
-        width: 50px;
-    }
-
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    height: 30px;
-    background-color: black;
-    color: #fff;
-}
 
 
 
@@ -544,17 +594,12 @@ hr{
 #zoom {
     transition: transform .2s; 
 }
- 
 #zoom:hover {
     transform: scale(1.1); 
 }
-
-
 #zoom:hover {
     transform: scale(1.1); 
 }
-
-
 #zoom {
     transition: transform .2s; 
 }
@@ -562,7 +607,7 @@ hr{
 
 
 .centrado{
-     color: #18377A;
+    color: #18377A;
     text-align: center }
 
 
@@ -581,18 +626,13 @@ flex-wrap: wrap;
 }
         
    /* Fin Nueastros Clientes*/
+   #caja3 { position: absolute;
+    z-index: 50; 
+    top: 12em;
+    left: 2em;
+    height: 30px;
 
 
-#caja3 { position: absolute;
-    z-index: 50;  top: 12em; left: 2em;}
+  }
 
-
-
-iframe{
-  width: 100%;
-  height: 500px;
-  /*Sólo para que se vea, ya que la dirección al parecer está mal*/
-  border: 5px solid green;
-}
-
-    
+  
