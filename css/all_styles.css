@@ -15,6 +15,17 @@
 }
 
 
+hr{
+    margin: 10px 200px;
+    border-color: #eeeeee;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+
+
 
 
 
@@ -110,7 +121,7 @@
                     color: #18377A;
                 }
 
-        .headline .call_action1 button{
+        .headline nav .call_action1 button{
             color: #fff;
             margin: 0 70px;
             height: 50px;
@@ -121,6 +132,12 @@
             font-weight: bold;
             font-size: large;
         }
+            .headline nav .call_action1 button:hover{
+                background-color: #fff;
+                color: #09BB1B;
+                border: 10  px;
+                border-color: #09BB1B;
+            }
 
     .menu{
         background-color: #18377A;
@@ -246,16 +263,18 @@ footer{
                     font-size: 20px;
                 }
             .contact-form form button{
-                width: 150px;
+                width: 180px;
                 height: 50px;
                 font-size: 20px;
+                border-radius:  30px;
                 font-weight: bold;
                 padding: auto;
-                background-color: #fff;
+                background-color: #E6BD5C;
                 border: 0 solid;
+                color: #18377A;
             }
-            .contact-form form p button :hover{
-                background-color: #E6BD5C   ;
+            .contact-form form div p button:hover{
+                background-color: white   ;
             }
 /*CUADRO DE CONTACTO Y MAPA*/
 
@@ -323,6 +342,9 @@ justify-content: space-between;
             font-weight: bold;
             border: 0;
         }
+            .column_info .info_box ul button:hover{
+                background-color: #fff;
+            }
         .column_info .tel_box{
             width: 300px;
             height: 150px;

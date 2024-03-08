@@ -101,7 +101,12 @@
 
 
 /* PRODUCTS */
-    #productos_destacados{
+    h1{
+        margin-top: 70px;
+        color: #18377A;
+        text-align: center;
+    }
+    .productos_destacados{
         margin: 30px 0;
         color: #18377A;
         height: 300px;
@@ -111,76 +116,79 @@
         align-content: center;
         justify-content: space-between;
     }
-        #productos_destacados a{
+        .productos_destacados a{
             text-decoration: none;
         }
-        #productos_destacados div img{
-            border-radius: 15px;
+        .productos_destacados div img{
+            
             width: 300px;
             height: 200px;
         }
-        #productos_destacados div h5{
+        .productos_destacados div h5{
+            color: #18377A;
+            font-size: larger;
             font-weight: 900;
             text-align: center;
-            margin: 10px 0;
+            margin: 8px 0;
         }
+        
 /* PRODUCTS */
 
 
 
-    hr{
-        margin: 10px 200px;
-    }
-
 
 
 /* OFFERS */
-    #productos_ofertas{
+    .offers_box{
         margin: 70px 0;
         height: 700px;
         padding: 0 100px;
         
     }
-        #productos_ofertas h1 {
+        .offers_box h1 {
             color: #18377A;
             text-align: center  ;
         }
-        #productos_ofertas #products_box{
+        .offers_box .products_box{
             display: flex;
             justify-content: space-between;
             
         }
-            #productos_ofertas #products_box div{
+        .offers_box .products_box a{
+            text-decoration: none;
+        }
+            .offers_box .products_box div{
                 margin: 50px 0;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
             }
-                #productos_ofertas #products_box div img{
+                .offers_box .products_box div img{
                     background-color: #e6e6e6;
                     width: 300px;
                     height: 310px;
                 }
-                #productos_ofertas #products_box div span{
+                .offers_box .products_box div span{
                     display: flex;
                     flex-direction: column;
                     padding: 10px;
                 }   
-                    #productos_ofertas #products_box div span .categoria{
+                    .offers_box .products_box div span .categoria{
                         font-size: small;
                         color: #18377A;
-                        margin-bottom: 10px;
+                        
                     }
-                    #productos_ofertas #products_box div span h5{
-                        font-weight: bolder;
+                    .offers_box .products_box div span h5{
+                        font-size: large;
+                        font-weight: 750;
                         color: #18377A;
                     }
-                    #productos_ofertas #products_box div span .datos{
-                        margin-top: 8px;
+                    .offers_box .products_box div span .datos{
+                        margin-top: 5px;
                         display: flex;
                         flex-direction: row;
                         align-items: center;
                         height: 22px;  
                     }
-                        #productos_ofertas #products_box div span .datos .medidas{
+                        .offers_box .products_box div span .datos .medidas{
                             color: #18377A;
                             display: flex;
                             align-items: center;
@@ -191,23 +199,24 @@
                             background-color: #e6e6e6;
                             font-size: smaller;
                         }
-                        #productos_ofertas #products_box div span .datos .color{
+                        .offers_box .products_box div span .datos .color{
                             margin-left: 8px;
                             border: 1px solid #e6e6e6;
                             height: 20px;
                             width: 20px;
                         }
-                    #productos_ofertas #products_box div span button{
-                        margin: 10px 0;
+                    .offers_box .products_box div span button{
+                        margin: 15px 0;
                         height: 40px;
                         width: 200px;
                         border-radius: 17px;
                         background-color: #09BB1B;
+                        color: #fff;
                         border: none;
                         font-weight: bold;
                         font-size: large;
                     }
-        #productos_ofertas .button_more{
+        .offers_box .button_more{
             margin: 20px;
             width: 280px;
             height: 40px;
@@ -218,7 +227,7 @@
             border: 0;
             background-color: #18377A
         }  
-        #productos_ofertas .button_more:hover{
+        .offers_box .button_more:hover{
             background-color: #E6BD5C;
             }
 /* OFFERS */

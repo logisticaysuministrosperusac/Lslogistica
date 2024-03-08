@@ -106,26 +106,32 @@
 
 /*PRODUCTOS*/
     /*NUESTROS PRODUCTOS*/
-        #productos_destacados{
-            margin: 30px 0;
-            color: #18377A;
-            height: 300px;
-            padding: 0 120px;
-            display: flex;
-            flex-wrap: wrap ;
-            align-content: center;
-            justify-content: space-between;
+        .productos_destacados{
+        margin: 30px 0;
+        color: #18377A;
+        height: 300px;
+        padding: 0 120px;
+        display: flex;
+        flex-wrap: wrap ;
+        align-content: center;
+        justify-content: space-between;
+    }
+        .productos_destacados a{
+            text-decoration: none;
         }
-            #productos_destacados div img{
-                border-radius: 20px;
-                width: 400px;
-                height: 170px;
-            }
-            #productos_destacados div h5{
-                font-weight: 900;
-                text-align: center;
-                margin: 10px 0;
-            }
+        .productos_destacados div img{
+            border-radius: 25px;
+            width: 400px;
+            height: 170px;
+        }
+        .productos_destacados div h5{
+            color: #18377A;
+            font-size: larger;
+            font-weight: 900;
+            text-align: center;
+            margin: 8px 0;
+        }
+        
     /*NUESTROS PRODUCTOS*/
 
 hr{
@@ -133,76 +139,97 @@ hr{
 }
 
     /*PRODUCTOS OFERTAS*/  
-        #productos_ofertas{
-            margin: 70px 0;
-            height: 700px;
-            padding: 0 100px;
+    .offers_box{
+        margin: 70px 0;
+        height: 700px;
+        padding: 0 100px;
+        
+    }
+        .offers_box h1 {
+            color: #18377A;
+            text-align: center  ;
+        }
+        .offers_box .products_box{
+            display: flex;
+            justify-content: space-between;
             
         }
-            #productos_ofertas h1 {
-                color: #18377A;
-                text-align: center  ;
+        .offers_box .products_box a{
+            text-decoration: none;
+        }
+            .offers_box .products_box div{
+                margin: 50px 0;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
             }
-            #productos_ofertas #products_box{
-                display: flex;
-                justify-content: space-between;
-                
-            }
-                #productos_ofertas #products_box div{
-                    margin: 50px 0;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+                .offers_box .products_box div img{
+                    background-color: #e6e6e6;
+                    width: 300px;
+                    height: 310px;
                 }
-                    #productos_ofertas #products_box div img{
-                        background-color: #e6e6e6;
-                        width: 300px;
-                        height: 310px;
+                .offers_box .products_box div span{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }   
+                    .offers_box .products_box div span .categoria{
+                        font-size: small;
+                        color: #18377A;
+                        
                     }
-                    #productos_ofertas #products_box div span{
+                    .offers_box .products_box div span h5{
+                        font-size: large;
+                        font-weight: 750;
+                        color: #18377A;
+                    }
+                    .offers_box .products_box div span .datos{
+                        margin-top: 5px;
                         display: flex;
-                        flex-direction: column;
-                        padding: 10px;
-                    }   
-                        #productos_ofertas #products_box div span .categoria{
-                            font-size: small;
+                        flex-direction: row;
+                        align-items: center;
+                        height: 22px;  
+                    }
+                        .offers_box .products_box div span .datos .medidas{
                             color: #18377A;
-                            margin-bottom: 10px;
-                        }
-                        #productos_ofertas #products_box div span h5{
-                            font-weight: bolder;
-                            color: #18377A;
-                        }
-                        #productos_ofertas #products_box div span .medidas{
-                            color: #18377A;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center ;
                             width: 80px;
                             text-align: center;
-                            margin: 8px 0;
+                            margin: 0;
                             background-color: #e6e6e6;
                             font-size: smaller;
                         }
-                        #productos_ofertas #products_box div span button{
-                            margin: 10px 0;
-                            height: 40px;
-                            width: 200px;
-                            border-radius: 17px;
-                            background-color: #09BB1B;
-                            border: none;
-                            font-weight: bold;
-                            font-size: large;
+                        .offers_box .products_box div span .datos .color{
+                            margin-left: 8px;
+                            border: 1px solid #e6e6e6;
+                            height: 20px;
+                            width: 20px;
                         }
-            #productos_ofertas .button_more{
-                margin: 20px;
-                width: 280px;
-                height: 40px;
-                font-size: large;
-                font-weight: bold;
-                color: #fff;
-                border-radius: 70px;
-                border: 0;
-                background-color: #18377A
-            }  
-            #productos_ofertas .button_more:hover{
-                background-color: #E6BD5C;
-                }
+                    .offers_box .products_box div span button{
+                        margin: 15px 0;
+                        height: 40px;
+                        width: 200px;
+                        border-radius: 17px;
+                        background-color: #09BB1B;
+                        color: #fff;
+                        border: none;
+                        font-weight: bold;
+                        font-size: large;
+                    }
+        .offers_box .button_more{
+            margin: 20px;
+            width: 280px;
+            height: 40px;
+            font-size: large;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 70px;
+            border: 0;
+            background-color: #18377A
+        }  
+        .offers_box .button_more:hover{
+            background-color: #E6BD5C;
+            }
 /*NUESTROS PRODUCTOS*/
 
     /*BANNER DE NOTICIAS*/
@@ -219,6 +246,10 @@ hr{
         display: flex;
         flex-direction: column;  
     }   
+        .clients_box div h1{
+            color: #18377A;
+            text-align: center;
+        }
         .clients_box .clients_logo{
             margin:  20px 0;
             padding: 0 100px;
