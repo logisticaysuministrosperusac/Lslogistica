@@ -6,7 +6,7 @@
     <title>Logística y Suministros Perú SAC</title>
     <link rel="shortcut icon" href="img/favicon_ls.png" type="image/x-icon">
     <link rel="stylesheet" href="css/all_styles.css">
-    <link rel="stylesheet" href="index_style.css    ">
+    <link rel="stylesheet" href="products_style.css">
     <!--<link rel="stylesheet" href="./css/inicio.css">-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,15 +20,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <!-- link para cambio de letra que se nesecita-->
-
 </head>
+
+
 
 <body>
 <!-- HEADLINE -->
     <div class="headline">
         <div class="box_ads">
             <ul>
-    
+
                 <li>
                     <img src="img/anuncio/anuncio-1.png" alt="">
                 </li>
@@ -47,9 +48,9 @@
             <div>
                 <img src="img/logo_ls.png" alt="" href="#">
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="index.html">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
-                    <a href="products.html">Productos</a>
+                    <a href="#">Productos</a>
                     <a href="contact_us.html">Contactos</a>
                     <a href="https://drive.google.com/file/d/1J8N03s_Ib4Cj6vfvZbd6FTD88gL1HGqH/view?usp=sharing" target="_blank">Catalogo</a>
                 </li>
@@ -74,16 +75,30 @@
     </div>
 <!-- HEADLINE -->
 
-<!--BOTON WHATSAPP-->
-<div id="zoom" class="boton_whatsapp">    
-    <a href="https://wa.me/+51997306886/?text=tu%20texto%20personalizado" target="_blank">
-        <img src="img/whatsapp.png">
-    </a>
-</div>
-<!--BOTON WHATSAPP-->
 
 
-<!--HERO-->
+<!-- WHATSAPP_BUTTON -->
+    <div id="zoom" class="boton_whatsapp">    
+        <a href="https://wa.me/+51997306886/?text=tu%20texto%20personalizado" target="_blank">
+            <img src="img/whatsapp.png">
+        </a>
+    </div>
+<!-- WHATSAPP_BUTTON -->
+
+
+
+<!-- HERO -->
+    <!-- ORDER -->
+    <div class="order_box">
+        <form action="" method="get" >
+            <input type="text" name="Nombre" placeholder="Nombre / Empresa">
+            <textarea name="Mensaje" rows="2" placeholder="Mensaje "></textarea>
+        <!--button onclick="sub()" style="border-radius: 30px;">Enviar</button-->
+            <button id="zoom" onclick="alerta()">Enviar</button>
+        </form>
+    </div>
+    <!-- ORDER -->
+
     <div class="slider-box">
         <ul>
             <li>
@@ -100,86 +115,57 @@
             </li>
         </ul>
     </div>
-<!--HERO-->
+<!-- HERO -->
 
 
-<!-- VENEFICIOS -->
-    <div id="icon_blocks" class="flex-container">
-        <div> 
-            <img src="img/veneficios/24-horas.png">
-            <span> 
-                <h5>ATENCION LAS<br>24 HORAS</h5>
-            </span> 
-        </div>
 
-        <div>  
-            <img src="img/veneficios/envio.png">
-            <span>
-                <h5>ENVIO A<br>TODO EL PERU</h5> 
-            </span>
-        </div>
+<!-- PRODUCTS -->
+    <div id="productos_destacados" class="products">
+        <a href="products/sacos.html">
+            <div id="zoom"> 
+                <img src="img/hero/hero_1.png">
+                <div class="categoria__title">
+                    <h5 class="centrado">SACOS TEJIDOS</h5>                                           
+                </div>
+            </div>
+        </a>
 
-        <div>
-            <img src="img/veneficios/caja.png"> 
-            <span>
-                <h5>STOK<br>INMEDIATO</h5> 
-            </span>
-        </div>
+        <a href="products/telas.html">
+            <div id="zoom"> 
+                <img src="img/hero/hero_2.png">
+                <div class="categoria__title">
+                    <h5 class="centrado">TELAS</h5>                                       
+                </div>
+            </div>
+        </a>
 
-        <div>
-            <img src="img/veneficios/alta-calidad.png">
-            <span> 
-                <h5>PRORODUCTOS<br>DE CALIDAD</h5>
-            </span>
-        </div>
+        <a href="products/mallas.html">
+            <div id="zoom"> 
+                <img src="img/hero/hero_3.png">
+                <div class="categoria__title">
+                    <h5 class="centrado">MALLAS</h5>                                               
+                </div>
+            </div>
+        </a>
 
-        <div>
-            <img src="img/veneficios/credito.png">
-            <span> 
-                <h5>PEDIDOS AL<br>CREDITO</h5>
-            </span>
-        </div>
+        <a href="products/impermeables.html">
+            <div id="zoom"> 
+                <img src="img/hero/hero_4.png">
+                <div class="categoria__title">
+                    <h5 class="centrado">IMPERMEABLES</h5>                             
+                </div>
+            </div>
+        </a>
     </div>
-<!-- VENEFICIOS -->
+<!-- PRODUCTS -->
 
-
-<!-- NUESTROS PRODUCTOS -->
-    <div id="productos_destacados" class="flex-container">
-        <div id="zoom"> 
-            <img src="img/hero/hero_1.png" style="width: 350px;">
-            <div class="categoria__title">
-                <h5 class="centrado">SACOS TEJIDOS</h5>                                           
-            </div>
-        </div>
-
-        <div id="zoom"> 
-            <img src="img/hero/hero_2.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">TELAS</h5>                                       
-            </div>
-        </div>
-
-        <div id="zoom"> 
-            <img src="img/hero/hero_3.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">MALLAS</h5>                                               
-            </div>
-        </div>
-
-        <div id="zoom"> 
-            <img src="img/hero/hero_4.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">IMPERMEABLES</h5>                             
-            </div>
-        </div>
-    </div>
-<!-- NUESTROS PRODUCTOS -->
 
 
     <hr>
 
 
-<!-- PRODUCTOS EN OFERTA -->
+
+<!-- OFFERS -->
     <div id="productos_ofertas" >
         <h1 class="centrado">Productos en Oferta</h1>
 
@@ -189,7 +175,10 @@
                 <span>
                     <p class="categoria">MALLA RASCHEL </p>
                     <h5 style="line-height: 0%">MALLA RASCHEL 90%</h5>
-                    <p class="medidas">4.2 X 100 </p>
+                    <section class="datos">
+                        <p class="medidas">4.2 X 100 </p>
+                        <div class="color" style="background-color: forestgreen;"></div>
+                    </section>
                     <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
                         <center>
                             <button type="button" class="btn btn-success" style="border-radius: 70px;">
@@ -205,8 +194,10 @@
                 <span>
                     <p class="categoria">MALLA RASCHEL </p>
                     <h5 style="line-height: 0%">MALLA RASCHEL 90%</h5>
-                    <p class="medidas">4.2 X 100 </p>
-
+                    <section class="datos">
+                        <p class="medidas">4.2 X 100</p>
+                        <div class="color" style="background-color: forestgreen;"></div>
+                    </section>
                     <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
                         <center>
                             <button type="button" class="btn btn-success" style="border-radius: 70px" >
@@ -222,8 +213,10 @@
                 <span>
                     <p class="categoria">MALLA RASCHEL </p>
                     <h5 style="line-height: 0%">MALLA RASCHEL 95%</h5>
-                    <p class="medidas">4.2 X 100 </p>
-
+                    <section class="datos">
+                        <p class="medidas">4.2 X 100 </p>
+                        <div class="color" style="background-color: forestgreen;"></div>
+                    </section>
                     <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
                         <center>
                             <button type="button" class="btn btn-success" style="border-radius: 70px" >
@@ -239,8 +232,10 @@
                 <span>
                     <p class="categoria">TELA ARPILLERA </p>
                     <h5 style="line-height: 0%">TELA AVICOLA 140 GR</h5>
-                    <p class="medidas">3 X 200 </p>
-
+                    <section class="datos">
+                        <p class="medidas">3 X 200</p>
+                        <div class="color" style="background-color: rgb(255, 255, 255);"></div>
+                    </section>
                     <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
                         <center>
                             <button type="button" class="btn btn-success" style="border-radius: 70px" >
@@ -256,7 +251,10 @@
                 <span>
                     <p class="categoria">TELA ARPILLERA </p>
                     <h5 style="line-height: 0%">TELA AVICOLA 140 GR</h5>
-                    <p class="medidas">3 X 200 </p>
+                    <section class="datos">
+                        <p class="medidas">3 X 200</p>
+                        <div class="color" style="background-color: black;"></div>
+                    </section>
                     <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
                         <center>
                             <button type="button" class="btn btn-success" style="border-radius: 70px" >
@@ -274,48 +272,7 @@
             </button>
         </center>
     </div>
-<!-- PRODUCTOS EN OFERTA -->
-
-
-    <hr>
-
-
-
-<!--BANNER DE NOTICIAS-->
-    <div class="new_banner">
-        im
-    </div>
-
-
-
-    <hr>
-
-
-
-<!--NUESTROS CLIENTES-->
-    <div class="clients_box"> 
-        <div >
-            <h1 class="centrado">Nuestros Clientes</h1>
-        </div>
-        <div class="clients_logo">
-            <div> 
-                <img src="img/clientes/aesa.png">
-            </div>
-            <div>  
-                <img src="img/clientes/icsa.png">
-            </div>
-            <div> 
-                <img src="img/clientes/don_raul.png">
-            </div>
-            <div>  
-                <img src="img/clientes/volcan.png ">
-            </div>
-            <div> 
-                <img src="img/clientes/eyc.png">
-            </div>
-        </div>
-    </div>
-<!-- CLIENTES -->
+<!-- OFFERS -->
 
 
 
@@ -436,10 +393,11 @@
             </div>
         </div>
     <!-- FOOTER -->
-    </footer>
+</footer>
 
-    <div class="footer">
-        <p>©Logistica y Suministros Perú SAC - NullZerø - 2024</p>
-    </div>
+<div class="footer">
+    <p>©Logistica y Suministros Perú SAC - NullZerø - 2024</p>
+</div>
+
 </body>
 </html>
