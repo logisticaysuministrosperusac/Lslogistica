@@ -133,10 +133,8 @@ hr{
             font-size: large;
         }
             .headline nav .call_action1 button:hover{
-                background-color: #fff;
-                color: #09BB1B;
-                border: 10  px;
-                border-color: #09BB1B;
+                background-color: #18377A;
+                color: #fff;
             }
 
     .menu{
@@ -209,8 +207,8 @@ footer{
     align-items: center ;
 }
     .form_box iframe{
-        width: 800px;
-        height: 525px;
+        width: 900px;
+        height: 580px;
     }
     .contact-form{
         width: 800px;
@@ -294,7 +292,6 @@ justify-content: space-between;
     align-items: center;
 }
     .contact-info .logo_redes .logo_wht{
-        background-color: #fff;
         height: 150px;
     }
     .contact-info .logo_redes a img{

@@ -44,7 +44,7 @@
             .order_box{
                 width: 500px;
                 height: 400px;
-                background-color: #e6bd5cbb;
+                background-color: #e6e6e6bb;
                 position: absolute;
                 z-index: 50;
                 top: 225px; 
@@ -75,14 +75,15 @@
                     height: 80px;
                     border: 0;
                     padding-left: 20px;
+                    padding: 0 20px;
                 }
                 .order_box form textarea{
                     border-radius: 25px;
                     width: 450px;
                     height: 130px;
                     border: 0;
-                    padding-left: 20px;
-                    padding-top: 15px;
+                    padding: 20px 15px;
+                    resize: none;
                 }
                 .order_box form button{
                     height: 50px;
