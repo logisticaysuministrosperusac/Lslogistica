@@ -6,6 +6,7 @@
     <title>Logística y Suministros Perú SAC</title>
     <link rel="shortcut icon" href="img/favicon_ls.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!--<link rel="stylesheet" href="./css/inicio.css">-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="js/api.js"></script>
 
     <!-- link para cambio de letra que se nesecita-->
 
@@ -62,10 +64,10 @@
         <div class="menu">
             <li>
                 <a href="telaArpillera.html">Tela Arpillera </a>
-                <a href="">Malla Raschel</a>
-                <a href="">Sacos Tejidos </a>
-                <a href="">Tela Avicola </a>
-                <a href="">Tela Tarflex</a>
+                <a  id="importar">Malla Raschel</a>
+                <a id="importar_1">Sacos Tejidos </a>
+                <a id="importar_2">Tela Avicola </a>
+                <a id="importar_3">Tela Tarflex</a>
                 <!--a href="">Impermeables</a-->
             </li>
         </div>
@@ -140,42 +142,50 @@
 <!-- VENEFICIOS -->
 
 
+
 <!-- NUESTROS PRODUCTOS -->
     <div id="productos_destacados" class="flex-container">
         <div id="zoom"> 
             <img src="img/hero/hero_1.png" style="width: 350px;">
             <div class="categoria__title">
-                <h5 class="centrado">SACOS TEJIDOS</h5>                                           
+                <h5 class="centrado" id="llamar">SACOS TEJIDOS</h5>                                           
             </div>
         </div>
 
         <div id="zoom"> 
             <img src="img/hero/hero_2.png" style="width: 350px;" >
             <div class="categoria__title">
-                <h5 class="centrado">TELAS</h5>                                       
+                <h5 class="centrado" id="llamar_1">TELAS</h5>                                       
             </div>
         </div>
 
         <div id="zoom"> 
             <img src="img/hero/hero_3.png" style="width: 350px;" >
             <div class="categoria__title">
-                <h5 class="centrado">MALLAS</h5>                                               
+                <h5 class="centrado" id="llamar_2">MALLAS</h5>                                               
             </div>
         </div>
 
         <div id="zoom"> 
             <img src="img/hero/hero_4.png" style="width: 350px;" >
             <div class="categoria__title">
-                <h5 class="centrado">IMPERMEABLES</h5>                             
+                <h5 class="centrado" id="llamar_3">IMPERMEABLES</h5>                             
             </div>
         </div>
     </div>
 <!-- NUESTROS PRODUCTOS -->
 
 
+
+
+
+
+
     <hr>
 
+    <div class="Contenido">   <!-- aca inicia el desplasamiento del ajan y js -->
 
+    </div>  <!-- aqui cierra  lo es el traslado de informaciuon del ajas kjs-->
 <!-- PRODUCTOS EN OFERTA -->
     <div id="productos_ofertas" >
         <h1 class="centrado">Productos en Oferta</h1>
@@ -274,13 +284,33 @@
 <!-- PRODUCTOS EN OFERTA -->
 
 
+
+
+<section class="modal">
+    <div class="modal__container">
+
+        <img src="img/hero/hero_1.png" alt="" class="modal_img">
+        <h2 class="modal__title">Bienvenidos</h2>
+        <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a
+            b delectus cum sit eos libero natus perferendi
+            s soluta at, necessitatibus quaerat numquam 
+            perspiciatis maiores, voluptatum sapiente consequatur asperiores. Magnam, qui!</p>
+           <a href="" class="modal__close">Cerrar Modal </a>
+    </div>
+
+
+</section>
+
+
+
+
     <hr>
 
 
 
 <!--BANNER DE NOTICIAS-->
     <div class="new_banner">
-        im
+        imn
     </div>
 
 

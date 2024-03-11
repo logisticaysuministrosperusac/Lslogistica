@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logística y Suministros Perú SAC</title>
     <link rel="shortcut icon" href="img/favicon_ls.png" type="image/x-icon">
@@ -19,7 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script src="js/api.js?1.7"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/api.js?1.8"></script>
 
 
     <!-- link para cambio de letra que se nesecita-->
@@ -66,18 +65,18 @@
         <div class="menu">
             <li>
                 <a href="telaArpillera.html">Tela Arpillera </a>
-                <a href="">Malla Raschel</a>
-                <a href="">Sacos Tejidos </a>
-                <a href="">Tela Avicola </a>
-                <div id="importarContenido" >Click</div> 
-                <a href="">Tela Tarflex</a>
+                <a  id="importar">Malla Raschel</a>
+                <a  id="importar_1">Sacos Tejidos </a>
+                <a  id="importar_2">Tela Avicola </a>
+                <!--div id="importarContenido" >Click</!--div>--> 
+                <a id="importar_3">Tela Tarflex</a>
+                <!--a id="div" href="">s</!--a>-->
+                <!--div id="importar" >Raschel</!--div> -->
+             
                
                 <!--a href="">Impermeables</a-->
             </li>
-            <div id="div"style="display: none;">
-                s
-               
-            </div>
+    
 
 
           
@@ -90,45 +89,6 @@
 
 
 
-    <div id="caja3" class="div" style="display: none;">
-
-         <iframe style="background: red; overflow: auto;   box-sizing: border-box;
-  width: 100%;"  src="includes.html"></iframe>
-    
-           <!--div class="contact-form" style="background: #9b9b9b; border-radius: 40px"; >
-
-            <iframe src=""></iframe>
-           
-         
-                <form action="" method="get" >
-                    <div class="block">
-                        <p  >
-                            <input type="text" name="Nombre" placeholder="Nombre / Empresa" style="border-radius: 70px">
-                        </p>
-
-
-                    </div>
-
-                     <div class="block">
-
-                        <p>
-                            <textarea name="Mensaje" rows="2" placeholder="Mensaje " style="border-radius: 30px; width:500px;height:100px;"></textarea>
-                        </p>
-                        
-                      
-                    </div>
-
-                            <!-button onclick="sub()" style="border-radius: 30px;">Enviar</button-->
-
-                  
-                            <!--button onclick="alerta()" style="border-radius: 30px;">Enviar</button-->
-                            
-                <!--/form>
-
-             
-
-        </div-->
-</div>
 
 
 
@@ -141,7 +101,59 @@
 <!--BOTON WHATSAPP-->
 
 
+
+
+
+
+
+
 <!--HERO-->
+
+
+
+
+
+
+
+<div id="caja3" class="div">
+
+
+    
+    <div class="contact-form" style="background: #9b9b9b; border-radius: 40px"; >
+
+  
+
+         <form action="" method="get" >
+             <div class="block">
+                 <p  >
+                     <input type="text" name="Nombre" placeholder="Nombre / Empresa" style="border-radius: 70px">
+                 </p>
+
+
+             </div>
+
+              <div class="block">
+
+                 <p>
+                     <textarea name="Mensaje" rows="2" placeholder="Mensaje " style="border-radius: 30px; width:500px;height:100px;"></textarea>
+                 </p>
+                 
+               
+             </div>
+
+                     <!--button onclick="sub()" style="border-radius: 30px;">Enviar</button-->
+
+           
+                     <button onclick="alerta()" style="border-radius: 30px;">Enviar</button>
+                     
+         </form>
+
+      
+
+ </div>
+
+</div>
+
     <div class="slider-box">
         <ul>
             <li>
@@ -162,80 +174,209 @@
 
 
 <!-- VENEFICIOS -->
-    <div id="icon_blocks" class="flex-container">
-        <div id="zoom"> 
-            <img src="img/veneficios/24-horas.png">
-            <span> 
-                <h5>ATENCION LAS<br>24 HORAS</h5>
-            </span> 
-        </div>
 
-        <div id="zoom">  
-            <img src="img/veneficios/envio.png">
-            <span>
-                <h5>ENVIO A<br>TODO EL PERU</h5> 
-            </span>
-        </div>
-
-        <div id="zoom">
-            <img src="img/veneficios/caja.png"> 
-            <span>
-                <h5>STOK<br>INMEDIATO</h5> 
-            </span>
-        </div>
-
-        <div id="zoom">
-            <img src="img/veneficios/alta-calidad.png">
-            <span> 
-                <h5>PRORODUCTOS<br>DE CALIDAD</h5>
-            </span>
-        </div>
-
-        <div id="zoom">
-            <img src="img/veneficios/credito.png">
-            <span> 
-                <h5>PEDIDOS AL<br>CREDITO</h5>
-            </span>
-        </div>
-    </div>
 <!-- VENEFICIOS -->
 
 
+
+
+
 <!-- NUESTROS PRODUCTOS -->
-    <div id="productos_destacados" class="flex-container">
+
+<!-- NUESTROS PRODUCTOS -->
+
+
+
+
+<div class="Contenido">  <!----------------------  Aqui inicia lo que es el traslado de informacion con jscrip-ajax--------------------------------->
+<!-- TELA ARPILLERA -------------------------------------TELAS ARPILLERASS--------------------------------->
+
+
+<div id="productos_ofertas" >
+    <h1 class="centrado">TELA ARPILLERA</h1>
+
+    <div id="products_box">
         <div id="zoom"> 
-            <img src="img/hero/hero_1.png" style="width: 350px;">
-            <div class="categoria__title">
-                <h5 class="centrado">SACOS TEJIDOS</h5>                                           
-            </div>
+            <img src="img/130524-65_v_c_d.png">
+            <span>
+                <p class="categoria">MALLA RASCHEL </p>
+                <h5 style="line-height: 0%">MALLA RASCHEL 90%</h5>
+                <p class="medidas">4.2 X 100 </p>
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px;">
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span> 
         </div>
 
         <div id="zoom"> 
-            <img src="img/hero/hero_2.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">TELAS</h5>                                       
-            </div>
+            <img src="img/130524-65_v_c_d.png">
+            <span>
+                <p class="categoria">MALLA RASCHEL </p>
+                <h5 style="line-height: 0%">MALLA RASCHEL 90%</h5>
+                <p class="medidas">4.2 X 100 </p>
+
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span>
         </div>
 
         <div id="zoom"> 
-            <img src="img/hero/hero_3.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">MALLAS</h5>                                               
-            </div>
+            <img src="img/130524-65_v_c_d.png">
+            <span>
+                <p class="categoria">MALLA RASCHEL </p>
+                <h5 style="line-height: 0%">MALLA RASCHEL 95%</h5>
+                <p class="medidas">4.2 X 100 </p>
+
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span> 
         </div>
 
         <div id="zoom"> 
-            <img src="img/hero/hero_4.png" style="width: 350px;" >
-            <div class="categoria__title">
-                <h5 class="centrado">IMPERMEABLES</h5>                             
-            </div>
+            <img src="img/123942-1419291.png">
+            <span>
+                <p class="categoria">TELA ARPILLERA </p>
+                <h5 style="line-height: 0%">TELA AVICOLA 140 GR</h5>
+                <p class="medidas">3 X 200 </p>
+
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span> 
+        </div>
+
+        <div id="zoom"> 
+            <img src="img/014351-2.png">
+            <span>
+                <p class="categoria">TELA ARPILLERA </p>
+                <h5 style="line-height: 0%">TELA AVICOLA 140 GR</h5>
+                <p class="medidas">3 X 200 </p>
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span> 
         </div>
     </div>
-<!-- NUESTROS PRODUCTOS -->
 
 
-    <hr>
+</div>
 
+
+
+<div id="productos_ofertas" >
+
+    <div id="products_box">
+        <div id="zoom"> 
+            <img src="img/130524-65_v_c_d.png">
+            <span>
+                <p class="categoria">MALLA RASCHEL </p>
+                <h5 style="line-height: 0%">MALLA RASCHEL 90%</h5>
+                <p class="medidas">4.2 X 100 </p>
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px;">
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span> 
+        </div>
+
+        <div id="zoom"> 
+            <img src="img/130524-65_v_c_d.png">
+            <span>
+                <p class="categoria">MALLA RASCHEL </p>
+                <h5 style="line-height: 0%">MALLA RASCHEL 90%</h5>
+                <p class="medidas">4.2 X 100 </p>
+
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span>
+        </div>
+
+        <div id="zoom"> 
+            <img src="img/130524-65_v_c_d.png">
+            <span>
+                <p class="categoria">MALLA RASCHEL </p>
+                <h5 style="line-height: 0%">MALLA RASCHEL 95%</h5>
+                <p class="medidas">4.2 X 100 </p>
+
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span> 
+        </div>
+
+        <div id="zoom"> 
+            <img src="img/123942-1419291.png">
+            <span>
+                <p class="categoria">TELA ARPILLERA </p>
+                <h5 style="line-height: 0%">TELA AVICOLA 140 GR</h5>
+                <p class="medidas">3 X 200 </p>
+
+                <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                            COTIZAR
+                        </button>
+                    </center>
+                </a>
+            </span> 
+        </div>
+
+        <div id="zoom"> 
+            <img src="img/014351-2.png">
+            <span>
+                <p class="categoria">TELA ARPILLERA </p>
+                <h5 style="line-height: 0%">TELA AVICOLA 140 GR</h5>
+                <p class="medidas">3 X 200 </p>
+
+            </span> 
+        </div>
+    </div>
+
+
+</div>  
+
+
+
+<!-- TELA ARPILLERA -------------------------------------TELAS ARPILLERASS-----------------------FINNNN---------->
+
+
+
+</div>  <!--este div cierra las clases la clase del contenido lo que hace que cambiie ,  el menu de telas -->
+<hr>
 
 <!-- PRODUCTOS EN OFERTA -->
     <div id="productos_ofertas" >
@@ -326,12 +467,18 @@
             </div>
         </div>
 
+
         <center>
             <button id="zoom" type="button" class="button_more">
                 MAS PRODUCTOS
             </button>
         </center>
     </div>
+
+
+
+
+
 <!-- PRODUCTOS EN OFERTA -->
 
 

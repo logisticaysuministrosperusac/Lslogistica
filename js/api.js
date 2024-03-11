@@ -49,12 +49,116 @@ function alerta()
             });
         });*/
 
+
 $(document).ready(function(){
 
   $("#importarContenido").click(function(){
     console.log('quinua');
-    $(".div").show();
+    /*$(".div").show();*/
+    $('#div').load('contenido.html');
     console.log('quinua_');
   });
+});
+
+
+
+$(document).ready(function(){
+
+
+
+  $("#importar").click(function(){
+    console.log('quinua');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_2/MallaRachel.html');
+    console.log('quinua_');
+  });
+
+});
+
+
+
+
+$(document).ready(function(){
+
+
+  /* --------------*MENU 2*/
+
+  $("#importar").click(function(){
+    console.log('Malla Raschel');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_2/MallaRachel.html');
+    console.log('Malla Raschel');
+  });
+
+
+  $("#importar_1").click(function(){
+    console.log('SacosTejidos');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_2/SacosTejidos.html');
+    console.log('SacosTejidos');
+  });
+
+
+
+  $("#importar_2").click(function(){
+    console.log('TelaAvicola');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_2/TelaAvicola.html');
+    console.log('TelaAvicola');
+  });
+
+
+
+  $("#importar_3").click(function(){
+    console.log('TelaTarflex');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_2/TelaTarflex.html');
+    console.log('TelaTarflex');
+  });
+  /* ------FIN--------*MENU 2*/
+
+
+
+
+  /* --------------*MENU 3*/
+
+
+
+  
+  $("#llamar").click(function(){
+    console.log('sacos');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_3/Sacos.html');
+    console.log('Sacos');
+  });
+
+
+  $("#llamar_1").click(function(){
+    console.log('Telas');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_3/Telas.html');
+    console.log('Telas');
+  });
+
+
+  $("#llamar_2").click(function(){
+    console.log('MALLAS');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_3/Mallas.html');
+    console.log('mallas');
+  });
+
+
+  $("#llamar_3").click(function(){
+    console.log('Impermeables');
+    /*$(".div").show();*/
+    $('.Contenido').load('./menu_3/Impermeables.html');
+    console.log('impermeabless');
+  });
+
+
+
+  /* ------FIN--------*MENU 3*/
+
 });
 
