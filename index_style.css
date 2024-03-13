@@ -1,6 +1,7 @@
 /*HERO*/
 .slider-box{
     width: auto;
+    height: 800px;
     margin: auto 0;
     overflow: hidden;
     
@@ -20,6 +21,7 @@
     }
     .slider-box img{
         width: 1903px;
+        height: 600px;
         position: relative;
         
     }
