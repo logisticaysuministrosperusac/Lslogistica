@@ -26,7 +26,7 @@ function alerta()
 
 
     if (opcion == true) {
- 
+
 
       console.log('lo Hice');
     window.open('https://wa.me/+51978575288/?text='+nombre+'%20'+mensaje,'_blank');window.open(this.href,'_self');
@@ -94,7 +94,9 @@ $(document).ready(function(){
   $("#importar_1").click(function(){
     console.log('SacosTejidos');
     /*$(".div").show();*/
-    $('.Contenido').load('./menu_2/SacosTejidos.html');
+    // $('.Contenido').load('./menu_2/SacosTejidos.html'); /* ESTE CODIGO LO ESTOY REMPLAZANDO CON EL DE ABAJO...*/ 
+
+    $('.Contenido').load('./menu_3/Sacos.html');
     console.log('SacosTejidos');
   });
 
@@ -103,7 +105,7 @@ $(document).ready(function(){
   $("#importar_2").click(function(){
     console.log('TelaAvicola');
     /*$(".div").show();*/
-    $('.Contenido').load('./menu_2/TelaAvicola.html');
+    $('.Contenido').load('./menu_2/TelaAvicola.html');  
     console.log('TelaAvicola');
   });
 
@@ -128,6 +130,7 @@ $(document).ready(function(){
   $("#llamar").click(function(){
     console.log('sacos');
     /*$(".div").show();*/
+    
     $('.Contenido').load('./menu_3/Sacos.html');
     console.log('Sacos');
   });

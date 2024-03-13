@@ -273,11 +273,17 @@ index.css*{
                 width: 400px;
                 height: 170px;
             }
-            #productos_destacados div h5{
+            #productos_destacados div h5 {
                 font-weight: 900;
                 text-align: center;
                 margin: 10px 0;
+
             }
+            #productos_destacados div h5:hover {
+                color:#E6BD5C;
+
+            }
+
     /*NUESTROS PRODUCTOS*/
 
 hr{
@@ -299,7 +305,6 @@ hr{
                 display: flex;
                 justify-content: space-between;
             
-              
         
                 
             }
@@ -333,6 +338,11 @@ hr{
                             margin: 8px 0;
                             background-color: #e6e6e6;
                             font-size: smaller;
+                            display: flex;
+                            justify-content:  space-around;
+
+                            flex-wrap: wrap;
+
                         }
                         #productos_ofertas #products_box div span button{
                             margin: 10px 0;
@@ -694,6 +704,9 @@ flex-wrap: wrap;
         .modal__close:hover{
             color: floralwhite;
         }
+
+
+
 
 
 
