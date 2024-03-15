@@ -67,10 +67,10 @@ $(document).ready(function(){
 
 
   $("#importar").click(function(){
-    console.log('quinua');
+ 
     /*$(".div").show();*/
     $('.Contenido').load('./menu_2/MallaRachel.html');
-    console.log('quinua_');
+  
   });
 
 });
@@ -83,11 +83,34 @@ $(document).ready(function(){
 
   /* --------------*MENU 2*/
 
-  $("#importar").click(function(){
-    console.log('Malla Raschel');
+
+  $("#importar_0").click(function(){
+
+  
+    console.log('tela Arpillera____');
+ 
     /*$(".div").show();*/
-    $('.Contenido').load('./menu_2/MallaRachel.html');
+    window.scrollTo(0, 900);
+
+   $('.Contenido').load('./menu_2/TelaArpillera.html');
+    console.log('tela Arpillera____');
+    
+  });
+
+
+
+
+  $("#importar").click(function(){
+
+  
+    console.log('Malla Raschel____');
+ 
+    /*$(".div").show();*/
+    window.scrollTo(0, 900);
+
+   $('.Contenido').load('./menu_2/MallaRachel.html');
     console.log('Malla Raschel');
+    
   });
 
 
@@ -119,14 +142,11 @@ $(document).ready(function(){
   });
   /* ------FIN--------*MENU 2*/
 
-
-
-
   /* --------------*MENU 3*/
 
 
 
-  
+
   $("#llamar").click(function(){
     console.log('sacos');
     /*$(".div").show();*/
