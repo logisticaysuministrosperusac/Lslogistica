@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+    <h1>Página de productos</h1>
+    <button onclick="cambiarProducto('sacos')">Producto 1</button>
+    <button onclick="cambiarProducto('telas')">Producto 2</button>
+    <button onclick="cambiarProducto('mallas')">Producto 3</button>
+    <button onclick="cambiarProducto('impermeables')">Producto 4</button>
+    <button onclick="cambiarProducto('producto5')">Producto 5</button>
+    <div id="productoInfo">
+        <!-- Aquí se mostrará la información del producto -->
+    </div>
+
+    <script>
+        function cambiarProducto(producto) {
+            var divProducto = document.getElementById('productoInfo');
+            // Realizar una solicitud AJAX para obtener la información del producto desde el servidor
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', producto + '.html', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    divProducto.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+
+        // Al cargar la página, obtener el nombre del producto de la URL y mostrar su información
+        window.onload = function() {
+            var producto = window.location.hash.substring(1); // Obtener el nombre del producto de la URL
+            cambiarProducto(producto);
+        };
+    </script>
+</body>
+</html>
+

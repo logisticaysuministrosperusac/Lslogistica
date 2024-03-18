@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Página de inicio</h1>
+    <button onclick="mostrarProducto('product_group/sacos')">Producto 1</button>
+    <button onclick="mostrarProducto('telas')">Producto 2</button>
+    <button onclick="mostrarProducto('mallas')">Producto 3</button>
+    <button onclick="mostrarProducto('impermeables')">Producto 4</button>
+    <button onclick="mostrarProducto('producto5')">Producto 5</button>
+
+    <script>
+        function mostrarProducto(producto) {
+            window.location.href = "prueba_2.html#" + producto;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística y Suministros Perú SAC</title>
+    <link rel="shortcut icon" href="img/favicon_ls.png" type="image/x-icon">
+    <link rel="stylesheet" href="products_style.css">
+    <link rel="stylesheet" href="css/all_styles.css">
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/jump.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- HEADLINE -->
+<div class="headline">
+    <div class="box_ads">
+        <ul>
+
+            <li>
+                <img src="img/anuncio/anuncio-1.png" alt="">
+            </li>
+            <li>
+                <img src="img/anuncio/anuncio-2.png" alt="">
+            </li>
+            <li>
+                <img src="img/anuncio/anuncio-3.png" alt="">
+            </li>
+            <li>
+                <img src="img/anuncio/anuncio-4.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <nav>
+        <div>
+            <a href="">
+
+            </a>
+            <img src="img/logo_ls.png" alt="">
+            <li>
+                <a href="index.html">Inicio</a>
+                <a href="about_us.html">Nosotros</a>
+                <a href="#">Productos</a>
+                <a href="contact_us.html">Contactos</a>
+                <a href="https://drive.google.com/file/d/1J8N03s_Ib4Cj6vfvZbd6FTD88gL1HGqH/view?usp=sharing" target="_blank">Catalogo</a>
+            </li>
+        </div>
+        <a class="call_action1" href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+            <button id="zoom" type="button" class="btn btn-success ">
+                Realizar Pedidos
+            </button>
+        </a>
+    </nav>
+
+    <div class="menu">
+        <li>
+            <button onclick="cambiarProducto('products/arpillera')">Tela Arpillera</button>
+            <button onclick="cambiarProducto('products/raschel')">Malla Raschel</button>
+            <button onclick="cambiarProducto('products/sacos')">Sacos Tejidos</button>
+            <button onclick="cambiarProducto('products/avicola')">Tela Avícola</button>
+            <button onclick="cambiarProducto('products/tarflex')">Tela Tarflex</button>
+        </li>
+        <script>
+            function cambiarProducto(producto) {
+                var divProducto = document.getElementById('productoInfo');
+                divProducto.innerHTML = "";
+                // Realizar una solicitud AJAX para obtener la información del producto desde el servidor
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', producto + '.html', true);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        divProducto.innerHTML = xhr.responseText;
+                        window.scrollTo(0, 700);
+                    }
+                };
+                xhr.send();
+            }
+    
+            // Al cargar la página, obtener el nombre del producto de la URL y mostrar su información
+            window.onload = function() {
+                var producto = window.location.hash.substring(1); // Obtener el nombre del producto de la URL
+                cambiarProducto(producto);
+            };
+        </script>
+    </div>
+</div>
+<!-- HEADLINE -->
+
+
+
+
+
+<!-- WHATSAPP_BUTTON -->
+<div id="zoom" class="boton_whatsapp">    
+    <a href="https://wa.me/+51997306886/?text=tu%20texto%20personalizado" target="_blank">
+        <img src="img/whatsapp.png">
+    </a>
+</div>
+<!-- WHATSAPP_BUTTON -->
+
+
+
+
+
+<!-- HERO -->
+    <!-- ORDER -->
+    <div class="order_box">
+        <form action="" method="get" >
+            <input type="text" name="Nombre" placeholder="Nombre / Empresa">
+            <textarea name="Mensaje" rows="2" placeholder="Pedido: Producto, Medida, Cantidad"></textarea>
+        <!--button onclick="sub()" style="border-radius: 30px;">Enviar</button-->
+            <button id="zoom" onclick="alerta()">Enviar</button>
+        </form>
+    </div>
+    <!-- ORDER -->
+
+    <div class="slider-box">
+        <ul>
+            <li>
+                <img src="img/hero/hero_1.png" alt=""> 
+            </li>
+            <li>
+                <img src="img/hero/hero_2.png" alt="">     
+            </li>
+            <li>
+                <img src="img/hero/hero_3.png" alt="">
+            </li>
+            <li>
+                <img src="img/hero/hero_4.png" alt="">
+            </li>
+        </ul>
+    </div>
+<!-- HERO -->
+
+
+
+
+
+
+<!-- NUESTROS PRODUCTOS -->
+<div class="productos_destacados">
+    <a onclick="cambiarProducto('product_group/sacos')">
+        <div id="zoom"> 
+            <img src="img/products/sacos.png" style="width: 350px;">
+            <div class="categoria__title">
+                <h5>SACOS TEJIDOS</h5>                                           
+            </div>
+        </div>
+    </a>
+
+    <a onclick="cambiarProducto('product_group/telas')">
+        <div id="zoom"> 
+            <img src="img/products/telas.png" style="width: 350px;" >
+            <div class="categoria__title">
+                <h5>TELAS</h5>                                       
+            </div>
+        </div>
+    </a>
+
+    <a onclick="cambiarProducto('product_group/mallas')">
+        <div id="zoom"> 
+            <img src="img/products/mallas.png" style="width: 350px;" >
+            <div class="categoria__title">
+                <h5>MALLAS</h5>                                               
+            </div>
+        </div>
+    </a>
+    
+    <a onclick="cambiarProducto('product_group/impermeables')">
+        <div id="zoom"> 
+            <img src="img/products/impermeables.png" style="width: 350px;" >
+            <div class="categoria__title">
+                <h5>IMPERMEABLES</h5>                             
+            </div>
+        </div>
+    </a>
+</div>
+<!-- NUESTROS PRODUCTOS -->
+
+
+
+
+
+<hr>
+<!-- PRODUCTS BOX -->
+    <div id="productoInfo">
+        <!-- Aquí se mostrará la información del producto -->
+    </div>
+    <!-- PRODUCTS BOX -->
+
+
+
+
+
+    <!-- PRODUCTOS EN OFERTA -->
+    <div id="productos_ofertas" class="offers_box" >
+        <h1>Productos en Oferta</h1>
+
+        <div class="products_box">
+            <div id="zoom"> 
+                <img src="img/130524-65_v_c_d.png">
+                <span>
+                    <p class="categoria">MALLA RASCHEL </p>
+                    <h5>MALLA RASCHEL 90%</h5>
+                    <section class="datos">
+                        <p class="medidas">4.2 X 100 </p>
+                        <div class="color" style="background-color: forestgreen;"></div>
+                    </section>
+                    <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                        <center>
+                            <button type="button" class="btn btn-success" style="border-radius: 70px;">
+                                COTIZAR
+                            </button>
+                        </center>
+                    </a>
+                </span>  
+            </div>
+
+            <div id="zoom"> 
+                <img src="img/130524-65_v_c_d.png">
+                <span>
+                    <p class="categoria">MALLA RASCHEL </p>
+                    <h5>MALLA RASCHEL 90%</h5>
+                    <section class="datos">
+                        <p class="medidas">4.2 X 100</p>
+                        <div class="color" style="background-color: forestgreen;"></div>
+                    </section>
+                    <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                        <center>
+                            <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                                COTIZAR
+                            </button>
+                        </center>
+                    </a>
+                </span>
+            </div>
+
+            <div id="zoom"> 
+                <img src="img/130524-65_v_c_d.png">
+                <span>
+                    <p class="categoria">MALLA RASCHEL </p>
+                    <h5>MALLA RASCHEL 95%</h5>
+                    <section class="datos">
+                        <p class="medidas">4.2 X 100 </p>
+                        <div class="color" style="background-color: forestgreen;"></div>
+                    </section>
+                    <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                        <center>
+                            <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                                COTIZAR
+                            </button>
+                        </center>
+                    </a>
+                </span>
+            </div>
+
+            <div id="zoom"> 
+                <img src="img/123942-1419291.png">
+                <span>
+                    <p class="categoria">TELA ARPILLERA </p>
+                    <h5>TELA AVICOLA 140 GR</h5>
+                    <section class="datos">
+                        <p class="medidas">3 X 200</p>
+                        <div class="color" style="background-color: rgb(255, 255, 255);"></div>
+                    </section>
+                    <a href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                        <center>
+                            <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                                COTIZAR
+                            </button>
+                        </center>
+                    </a>
+                </span> 
+            </div>
+
+            <div id="zoom"> 
+                <img src="img/014351-2.png">
+                <span>
+                    <p class="categoria">TELA ARPILLERA </p>
+                    <h5>TELA AVICOLA 140 GR</h5>
+                    <section class="datos">
+                        <p class="medidas">3 X 200</p>
+                        <div class="color" style="background-color: black;"></div>
+                    </section>
+                    <center>
+                        <button type="button" class="btn btn-success" style="border-radius: 70px" >
+                            COTIZAR
+                        </button>
+                    </center>
+                </span>
+            </div>
+        </div>
+
+        <center>
+            <a href="https://drive.google.com/file/d/1J8N03s_Ib4Cj6vfvZbd6FTD88gL1HGqH/view?usp=sharing" >
+            <button id="zoom" type="button" class="button_more"  >
+                MAS PRODUCTOS
+            </button>
+        </a>
+        </center>
+    </div>
+<!-- PRODUCTOS EN OFERTA -->
+
+
+
+
+
+<!--FOOTER-->
+    <!-- CUADRO DE CONTACTO Y MAPA -->
+    <footer>
+        <div class="form_box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.322351954782!2d-76.94374298844605!3d-12.1584432880374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b987474213a3%3A0xebbd0a7e90867b80!2sLog%C3%ADstica%20y%20Suministros%20Per%C3%BA%20SAC!5e0!3m2!1ses-419!2spe!4v1709759920498!5m2!1ses-419!2spe" 
+            width="600" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-form" >
+                <h3>Contáctanos</h3>
+                <h5>Siempre estamos aquí para ayudar en todo lo que podamos</h5>
+                <form action="">
+                        <p>
+                            <input type="text" name="Nombre" placeholder="Nombre / Empresa" style="border-radius: 70px">
+                        </p>
+                        <p>
+                            <input type="text" name="Telefono" placeholder="Telefono" style="border-radius: 70px">
+                        </p>
+                        <p>
+                            <input type="email" name="Correo" placeholder="Correo Electronico" style="border-radius: 70px">
+                        </p>
+                        <p>
+                            <textarea name="Mensaje" rows="2" placeholder="Mensaje"></textarea>
+                        </p>
+
+                        <div>
+                            <p>
+                                <button type="submit" style="border-radius: 30px;" class="hover">Enviar</button>
+                            </p>
+                        </div>
+                </form>
+            </div>
+        </div>
+    <!-- CUADRO DE CONTACTO Y MAPA -->
+
+
+        <hr>
+
+
+    <!-- FOOTER -->
+        <div class="contact-info">
+            <div class="logo_redes">
+                <img class="logo_wht" src="img/logo_ls.png" alt="">
+                <div class="info_box">
+                    <a href="https://www.facebook.com/logisticaysuministrosperu" target="_blank">
+                        <img class="meta" src="img/ico/facebook-blanco.png" alt="">
+                    </a>
+                    <a href="https://wa.me/51978575288" target="_blank">
+                        <img class="whatsapp" src="img/ico/whatsapp-blanco.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="column_info">
+                <div class="info_box">
+                    <h3 style="color: #E6BD5C">Horario de atencion</h3>
+                    <ul>
+                        <li>Lunes a Sabado de </li>
+                        <li>7 a.m. hasta las 8 p.m.</li>
+                        <button id="zoom">Libro de Reclamaciones</button>
+                    </ul>
+                </div>
+
+                <div class="tel_box">
+                    <h3 style="color: #E6BD5C">Teléfono</h3>
+                    <ul>
+                        <div class="tel_1">
+                            <a href="https://api.whatsapp.com/send/?phone=%2B51997306886&text=tu+texto+personalizado&type=phone_number&app_absent=0">
+                                <li>978 575 288</li>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B51951484176&text=tu+texto+personalizado&type=phone_number&app_absent=0">
+                                <li>951 484 176</li>
+                            </a>
+                        </div>
+                        <div class="tel_2">
+                            <a href="https://api.whatsapp.com/send/?phone=%2B51978577895&text=tu+texto+personalizado&type=phone_number&app_absent=0">
+                                <li>978 577 895</li>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B51978576685&text=tu+texto+personalizado&type=phone_number&app_absent=0">
+                                <li>978 576 685</li>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column_info">
+                <div class="info_box">
+                    <h3 style="color: #E6BD5C">Nuestros Productos</h3>
+                    <ul>
+                        <a href="sacos.html"><li>Sacos de Polipropileno</li></a>
+                        <a href="raschel.html"><li>Mallas Raschel</li></a>
+                        <a href="arpillera.html"><li>Tela Arpillera</li></a>
+                        <a href="impermeables.html"><li>Impermeables</li></a>
+                    </ul>
+                </div>
+                <div class="info_box">
+                    <h3 style="color: #E6BD5C">Correos</h3>
+                    <ul>
+                        <a href="mailto:ventas@lsperu.com.pe">
+                            <li>ventas@lsperu.com.pe</li>
+                        </a>
+                        <a href="mailto:gerencia@lsperu.com.pe">
+                            <li>gerencia@lsperu.com.pe</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column_info">
+                <div class="info_box">
+                    <h3 style="color: #E6BD5C">Metodos de Pago</h3>
+                    <div class="bancos">
+                        <img class="bcp" src="img/ico/bcp-blanco.png" alt="">
+                        <img class="bbva" src="img/ico/bbva-blanco.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- FOOTER -->
+    </footer>
+
+    <div class="footer">
+        <p>©Logistica y Suministros Perú SAC - NullZerø - 2024</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* CONTACT_BLOCK */
+.contact{
+    margin:  160px 0 100px 0;
+    padding: 0 80px; 
+}
+    .contact .contact_title {
+        color: #18377A;
+        padding: 70px 0 0 0;
+    }
+        .contact .contact_title h3{
+            text-align: center;
+            font-size: 28pt;
+            margin: 8px;
+        }
+        .contact .contact_title h5{
+            text-align: center;
+            font-size: 14pt;
+            font-weight: 500;
+        }
+
+
+
+
+    .contact .contact_block{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 200px;
+    }
+
+
+/* INFO_CONTACTO */
+    .contact_box_1{
+        padding: 50px;
+        width: 800px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        .contact_box_1 .info_box,
+        .contact_box_1 .tel_box{
+            color: #18377A;
+            margin: 20px;
+        } 
+            .contact_box_1 .info_box h3,
+            .contact_box_1 .tel_box h3{
+                font-size: 18pt;
+            }
+        
+            .contact_box_1 .info_box ul li,
+            .contact_box_1 .tel_box ul li{
+                text-decoration: none;
+                list-style: none;
+                color: #18377A;
+                font-size: 15pt;
+                font-weight: 500;
+                padding-left: 10px;
+                padding-top: 3px;
+            }
+            .contact_box_1 .info_box ul a,
+            .contact_box_1 .tel_box ul a{
+                text-decoration: none;
+            }
+
+            .contact_box_1 .tel_box ul{
+                display: flex;
+            }
+                .contact_box_1 .tel_box ul .tel_2{
+                    padding-left: 15px;
+                }
+/* INFO_CONTACTO */
+
+
+
+/* FORMULARIO */
+    .contact_box_2{
+    padding: 50px;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .contact_box_2 form{
+        display: flex;
+        margin: 20px 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+        .contact_box_2 form p{
+            margin: 6px;
+        }
+            ::placeholder{
+                color: #a6a6a6;
+                font-weight: 500;
+                font-size: 15pt;
+            }
+            .contact_box_2 form p input{
+                width: 600px;
+                height: 50px;
+                padding: 17px 25px;
+                background-color: #e6e6e6;;
+                border: none;
+                font-size: 20px;
+            }
+            .contact_box_2 form p textarea{
+                width: 600px;
+                height: 100px;
+                padding: 10px 25px;
+                border-radius: 25px;
+                background-color:#e6e6e6;
+                border: none;
+                font-size: 20px;
+            }
+        .contact_box_2 form button{
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            border-radius:  30px;
+            font-weight: bold;
+            padding: auto;
+            background-color: #18377A;
+            border: 0 solid;
+            color: #fff;
+        }
+        .contact_box_2 form div p button:hover{
+            background-color: white   ;
+        }
+/* FORMULARIO */
+
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: #18377A;
+    color: #fff;
+    padding: 30px 100px;
+}  
+    /*CUADRO DE CONTACTO Y MAPA*/
+.form_box{
+    width: 100%;
+    height: 730px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center ;
+}
+    .form_box iframe{
+        width: 1600px;
+        height: 700px;
+    }
+    
+/*CUADRO DE CONTACTO Y MAPA*/
+
+footer hr{
+    border-color: #284585;
+}
+
+/*INFORMACIÓN DE CONTACTO*/
+.contact-info{
+    margin: 100px 300px 0;
+        display: flex;
+        justify-content: space-between;
+}    
+.contact-info .logo_redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .contact-info .logo_redes .logo_wht{
+        height: 150px;
+    }
+    .contact-info .logo_redes a img{
+        height: 50px;
+        margin: 20px;
+        margin-top: 30px;
+    }
+    
+/* FORMULARIO */
+.column_info{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+    .column_info h3{
+        font-size: 14pt;
+    }
+    .column_info .info_box{
+        width: 300px;
+        height: 150px;
+    }
+        .column_info .info_box ul li{
+            list-style: none;
+            padding-left: 8px;
+
+        }
+        .column_info .info_box ul a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .column_info .info_box ul{
+            margin: 0; 
+        }
+        .column_info .info_box ul div{
+            margin-right: 8px;
+        }
+        .column_info .info_box ul button{
+            margin: 5px;
+            width: 200px;
+            height: 30px;
+            font-size: 11pt;
+            border-radius: 25px;
+            background-color: #E6BD5C;
+            color: #18377A;
+            font-weight: bold;
+            border: 0;
+        }
+            .column_info .info_box ul button:hover{
+                background-color: #fff;
+            }
+        .column_info .tel_box{
+            width: 300px;
+            height: 150px;
+        }
+
+        .column_info .tel_box ul{
+            text-decoration: none;
+            display: flex;
+        }   
+            .column_info .tel_box ul .tel_1{
+                margin-left: 10px;
+            }
+            .column_info .tel_box ul .tel_2{
+                margin-left: 25px;
+            }
+                .column_info .tel_box ul div a{
+                    color: #fff;
+                    list-style: none;
+                }
+.column_info .info_box .bancos{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin-top: 15px;
+}
+.column_info .info_box div .bcp{
+    height: 40px;
+    margin-left: 10px;
+}
+.column_info .info_box div .bbva{
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+/* FOOTER */

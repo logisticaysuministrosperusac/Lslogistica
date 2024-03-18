@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística y Suministros Perú SAC</title>
+    <link rel="shortcut icon" href="img/favicon_ls.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="about_us_style.css">
+    <link rel="stylesheet" href="css/all_styles.css">
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/jump.js"></script>
+
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- HEADLINE -->
+    <div class="headline">
+        <div class="box_ads">
+            <ul>
+                <li>
+                    <img src="img/anuncio/anuncio-1.png" alt="">
+                </li>
+                <li>
+                    <img src="img/anuncio/anuncio-2.png" alt="">
+                </li>
+                <li>
+                    <img src="img/anuncio/anuncio-3.png" alt="">
+                </li>
+                <li>
+                    <img src="img/anuncio/anuncio-4.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <nav>
+            <div>
+                <img src="img/logo_ls.png" alt="" href="#">
+                <li>
+                    <a href="index.html#slider-box">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="products.html">Productos</a>
+                    <a href="contact_us.html">Contactos</a>
+                    <a href="https://drive.google.com/file/d/1J8N03s_Ib4Cj6vfvZbd6FTD88gL1HGqH/view?usp=sharing" target="_blank">Catalogo</a>
+                </li>
+            </div>
+
+            <a class="call_action1" href="https://wa.me/+51978575288/?text=tu%20texto%20personalizado" target="_blank">
+                <button type="button" class="btn btn-success ">
+                    Realizar Pedidos
+                </button>
+            </a>
+        </nav>
+
+        <div class="menu">
+            <li>
+                <a onclick="mostrarProducto('products/arpillera')">Tela Arpillera</a>
+                <a onclick="mostrarProducto('products/raschel')">Malla Raschel</a>
+                <a onclick="mostrarProducto('products/sacos')">Sacos Tejidos</a>
+                <a onclick="mostrarProducto('products/avicola')">Tela Avícola</a>
+                <a onclick="mostrarProducto('products/tarflex')">Tela Tarflex</a>
+            </li>
+            <script>
+                function mostrarProducto(producto) {
+                    window.location.href = "products.html#" + producto;
+                }
+            </script>
+        </div>
+    </div>
+<!-- HEADLINE -->
+
+<!--BOTON WHATSAPP-->
+<div id="zoom" class="boton_whatsapp">    
+    <a href="https://wa.me/+51997306886/?text=tu%20texto%20personalizado" target="_blank">
+        <img src="img/whatsapp.png">
+    </a>
+</div>
+<!--BOTON WHATSAPP-->
+
+
+
+
+
+<!--HERO-->
+    <div class="slider-box" id="slider-box">
+        <ul>
+            <li>
+                <img src="img/hero/hero_1.png" alt=""> 
+            </li>
+            <li>
+                <img src="img/hero/hero_2.png" alt="">     
+            </li>
+            <li>
+                <img src="img/hero/hero_3.png" alt="">
+            </li>
+            <li>
+                <img src="img/hero/hero_4.png" alt="">
+            </li>
+        </ul>
+    </div>
+<!--HERO-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+<!--BANNER DE NOTICIAS-->
+    <div class="img_cont">
+        <img class="maintenance_img" src="https://acerkate.com/storage/2021/03/mantenimiento-de-una-pagina-web-scaled.jpg" alt="">
+        <div>
+            <h3>Estamos en <br> Mantenimiento</h3>
+            <p>Nos encontramos mejorando y aumentando <br> el contenido de esta pagina.</p>
+        </div>
+    </div>
+    
+
+
+
+    <hr>
+
+
+
+<!--NUESTROS CLIENTES-->
+    <div class="clients_box"> 
+        <div >
+            <h1 class="centrado">Nuestros Clientes</h1>
+        </div>
+        <div class="clients_logo">
+            <div> 
+                <img src="img/clientes/aesa.png">
+            </div>
+            <div>  
+                <img src="img/clientes/icsa.png">
+            </div>
+            <div> 
+                <img src="img/clientes/don_raul.png">
+            </div>
+            <div>  
+                <img src="img/clientes/volcan.png ">
+            </div>
+            <div> 
+                <img src="img/clientes/eyc.png">
+            </div>
+        </div>
+    </div>
+<!-- CLIENTES -->
+
+
+
+<!--FOOTER-->
+    <!-- CUADRO DE CONTACTO Y MAPA -->
+    <footer>
+        <div class="form_box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.322351954782!2d-76.94374298844605!3d-12.1584432880374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b987474213a3%3A0xebbd0a7e90867b80!2sLog%C3%ADstica%20y%20Suministros%20Per%C3%BA%20SAC!5e0!3m2!1ses-419!2spe!4v1709759920498!5m2!1ses-419!2spe" 
+            width="600" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-form" >
+                <h3>Contáctanos</h3>
+                <h5>Siempre estamos aquí para ayudar en todo lo que podamos</h5>
+                <form action="">
+                        <p>
+                            <input type="text" name="Nombre" placeholder="Nombre / Empresa" style="border-radius: 70px">
+                        </p>
+                        <p>
+                            <input type="text" name="Telefono" placeholder="Telefono" style="border-radius: 70px">
+                        </p>
+                        <p>
+                            <input type="email" name="Correo" placeholder="Correo Electronico" style="border-radius: 70px">
+                        </p>
+                        <p>
+                            <textarea name="Mensaje" rows="2" placeholder="Mensaje"></textarea>
+                        </p>
+
+                        <div>
+                            <p>
+                                <button type="submit" style="border-radius: 30px;" class="hover">Enviar</button>
+                            </p>
+                        </div>
+                </form>
+            </div>
+        </div>
+    <!-- CUADRO DE CONTACTO Y MAPA -->
+
+
+        <hr>
+
+
+    <!-- FOOTER -->
+        <div class="contact-info">
+            <div class="logo_redes">
+                <img class="logo_wht" src="img/logo_ls.png" alt="">
+                <div class="info_box">
+                    <a href="https://www.facebook.com/logisticaysuministrosperu" target="_blank">
+                        <img class="meta" src="img/ico/facebook-blanco.png" alt="">
+                    </a>
+                    <a href="https://wa.me/51978575288" target="_blank">
+                        <img class="whatsapp" src="img/ico/whatsapp-blanco.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="column_info">
+                <div class="info_box">
+                    <h3 style="color: #E6BD5C">Horario de atencion</h3>
+                    <ul>
+                        <li>Lunes a Sabado de </li>
+                        <li>7 a.m. hasta las 8 p.m.</li>
+                        <button id="zoom">Libro de Reclamaciones</button>
+                    </ul>
+                </div>
+
+                <div class="tel_box">
+                    <h3 style="color: #E6BD5C">Teléfono</h3>
+                    <ul>
+                        <div class="tel_1">
+                            <a href="https://api.whatsapp.com/send/?phone=%2B51997306886&text=tu+texto+personalizado&type=phone_number&app_absent=0">
+                                <li>978 575 288</li>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B51951484176&text=tu+texto+personalizado&type=phone_number&app_absent=0">
+                                <li>951 484 176</li>
+                            </a>
+                        </div>
+                        <div class="tel_2">
+                            <a href="https://api.whatsapp.com/send/?phone=%2B51978577895&text=tu+texto+personalizado&type=phone_number&app_absent=0">
+                                <li>978 577 895</li>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B51978576685&text=tu+texto+personalizado&type=phone_number&app_absent=0">
+                                <li>978 576 685</li>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column_info">
+                <div class="info_box">
+                    <h3 style="color: #E6BD5C">Nuestros Productos</h3>
+                    <ul>
+                        <a href="sacos.html"><li>Sacos de Polipropileno</li></a>
+                        <a href="raschel.html"><li>Mallas Raschel</li></a>
+                        <a href="arpillera.html"><li>Tela Arpillera</li></a>
+                        <a href="impermeables.html"><li>Impermeables</li></a>
+                    </ul>
+                </div>
+                <div class="info_box">
+                    <h3 style="color: #E6BD5C">Correos</h3>
+                    <ul>
+                        <a href="mailto:ventas@lsperu.com.pe">
+                            <li>ventas@lsperu.com.pe</li>
+                        </a>
+                        <a href="mailto:gerencia@lsperu.com.pe">
+                            <li>gerencia@lsperu.com.pe</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column_info">
+                <div class="info_box">
+                    <h3 style="color: #E6BD5C">Metodos de Pago</h3>
+                    <div class="bancos">
+                        <img class="bcp" src="img/ico/bcp-blanco.png" alt="">
+                        <img class="bbva" src="img/ico/bbva-blanco.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- FOOTER -->
+    </footer>
+
+    <div class="footer">
+        <p>©Logistica y Suministros Perú SAC - NullZerø - 2024</p>
+    </div>
+</body>
+</html>
