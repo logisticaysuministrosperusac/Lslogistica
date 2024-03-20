@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirección de página de inicio</title>
+<script>
+window.onload = function() {
+    // Detectar si se está accediendo desde un dispositivo móvil
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+        // Redirigir a la página de inicio para dispositivos móviles
+        window.location.href = "pagina_inicio_movil.html";
+    } else {
+        // Redirigir a la página de inicio para computadoras
+        window.location.href = "pagina_inicio_pc.html";
+    }
+}
+</script>
+</head>
+<body>
+<!-- Este contenido se mostrará solo si JavaScript está deshabilitado o si hay algún problema de redirección -->
+<h1>Redirección de página de inicio</h1>
+<p>Si no has sido redirigido automáticamente, por favor <a href="pagina_inicio_pc.html">Haz clic aquí</a> para ir a la página de inicio para computadoras.</p>
+</body>
+</html>
